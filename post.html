@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post - Educação Ambiental</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    color:#222;
+    line-height:1.6;
+}
+
+/* HERO */
+
+.post-hero{
+    background:url('imagem1.jpg') center/cover no-repeat;
+    height:420px;
+    position:relative;
+    display:flex;
+    align-items:flex-end;
+    padding:60px;
+    color:white;
+}
+
+.post-hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.55);
+}
+
+.post-hero-content{
+    position:relative;
+    z-index:2;
+    max-width:800px;
+}
+
+.post-date{
+    font-size:14px;
+    letter-spacing:1px;
+    opacity:0.9;
+}
+
+.post-title{
+    font-size:42px;
+    font-weight:700;
+    margin-top:10px;
+}
+
+/* CONTAINER */
+
+.post-container{
+    max-width:900px;
+    margin:80px auto;
+    background:white;
+    padding:60px;
+    box-shadow:0 5px 30px rgba(0,0,0,0.05);
+}
+
+.post-container h2{
+    margin-top:40px;
+    color:#1a7c45;
+}
+
+.post-container img{
+    width:100%;
+    margin:30px 0;
+    border-radius:8px;
+}
+
+.post-container p{
+    margin-top:20px;
+    font-size:18px;
+}
+
+/* BOTÕES */
+
+.post-actions{
+    margin-top:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.post-actions a{
+    text-decoration:none;
+    font-weight:600;
+    color:#1a7c45;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    .post-hero{
+        height:300px;
+        padding:30px;
+    }
+
+    .post-title{
+        font-size:28px;
+    }
+
+    .post-container{
+        padding:30px;
+        margin:40px 15px;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="post-hero">
+    <div class="post-hero-content">
+        <div class="post-date">15 Maio 2026</div>
+        <div class="post-title">
+            Mutirão de Plantio no Bairro Centro
+        </div>
+    </div>
+</section>
+
+<section class="post-container">
+
+    <p>
+        No último sábado realizamos um grande mutirão de plantio com participação da comunidade,
+        escolas municipais e voluntários.
+    </p>
+
+    <img src="imagem1.jpg" alt="Mutirão de Plantio">
+
+    <p>
+        Foram plantadas 120 mudas nativas com o objetivo de fortalecer a arborização urbana
+        e contribuir para a melhoria da qualidade ambiental do município.
+    </p>
+
+    <h2>Participação da Comunidade</h2>
+
+    <p>
+        A ação contou com ampla participação popular, reforçando o compromisso coletivo
+        com a sustentabilidade e preservação ambiental.
+    </p>
+
+    <div class="post-actions">
+        <a href="timeline.html">← Voltar ao Blog</a>
+        <a href="#">Compartilhar</a>
+    </div>
+
+</section>
+
+</body>
+</html>

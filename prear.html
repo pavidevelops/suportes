@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Educação Ambiental Araucária</title>
+
+<style>
+
+/* ================= FUNNEL SANS ================= */
+
+@font-face {
+    font-family: 'FunnelSans';
+    src: url('./FunnelSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'FunnelSans';
+    src: url('./FunnelSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'FunnelSans';
+    src: url('./FunnelSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'FunnelSans';
+    src: url('./FunnelSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'FunnelSans';
+    src: url('./FunnelSans-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'FunnelSans', sans-serif;
+    background: #f4f7f6;
+    color: #1c1c1c;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a7c45;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* ================= HERO VIDEO ================= */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.hero-content h2 {
+    font-size: 110px;
+    font-weight: 900;
+    color: #2ecc71;
+    margin-top: -15px;
+}
+
+.hero-content p {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.hero-content button {
+    margin-top: 40px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    background: #2ecc71;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ================= SEÇÃO ================= */
+
+.section {
+    padding: 100px 60px;
+    text-align: center;
+}
+
+.section h3 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1a7c45;
+    margin-bottom: 30px;
+}
+
+.section p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ================= CARDS ================= */
+
+.cards-container {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.action-card {
+    background: #f2f2f2;
+    padding: 45px 35px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.action-card:hover {
+    transform: translateY(-8px);
+}
+
+.icon {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.action-card h4 {
+    color: #1a7c45;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.action-card p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* ================= LINK CARD ================= */
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media(max-width: 768px){
+
+    header {
+        padding: 15px 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content h2 {
+        font-size: 60px;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Educação Ambiental Araucária</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="timeline.html">Educação Ambiental</a> <!-- 🔥 AJUSTADO -->
+        <a href="#">Utilidade Pública</a>
+        <a href="#">Premiações</a>
+        <a href="#">Cadastre-se</a>
+        <a href="#">Atendimento</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <video autoplay muted loop playsinline>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+        <h1>EDUCAÇÃO AMBIENTAL</h1>
+        <h2>ARAUCÁRIA</h2>
+        <p>Sustentabilidade • Engajamento • Impacto Social</p>
+        <button>Saiba Mais</button>
+    </div>
+</section>
+
+<section class="section">
+    <h3>Compromisso Ambiental</h3>
+    <p>
+        Conectamos cidadãos, empresas e poder público
+        para promover sustentabilidade com tecnologia
+        e impacto real na sociedade.
+    </p>
+
+    <div class="cards-container">
+
+        <div class="action-card">
+            <div class="icon">🏆</div>
+            <h4>Ranking Municipal</h4>
+            <p>Veja os bairros e escolas mais engajados.</p>
+        </div>
+
+        <div class="action-card">
+            <div class="icon">🎯</div>
+            <h4>Desafios Semanais</h4>
+            <p>Participe de ações sustentáveis e acumule pontos.</p>
+        </div>
+
+        <div class="action-card">
+            <div class="icon">📊</div>
+            <h4>Relatórios Públicos</h4>
+            <p>Acompanhe dados ambientais em tempo real.</p>
+        </div>
+
+        <!-- 🔥 CARD EDUCACIONAL AGORA CLICÁVEL -->
+        <a href="timeline.html" class="card-link">
+            <div class="action-card">
+                <div class="icon">🌳</div>
+                <h4>Educação Ambiental</h4>
+                <p>Veja aqui nossas ultimas ações e novidades.</p>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+</html>

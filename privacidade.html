@@ -1,153 +1,211 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Política de Privacidade | PAVI Serviços Ambientais</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade - Educação Ambiental Araucária</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
-    }
+<style>
 
-    body {
-      margin: 0;
-      background: #f9fafb;
-      color: #1f2933;
-      padding: 24px;
-    }
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background:#f4f7f6;
+    color:#222;
+}
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: #ffffff;
-      padding: 32px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-    }
+header{
+    background:#1a7c45;
+    color:white;
+    padding:25px;
+    text-align:center;
+    font-size:22px;
+    font-weight:600;
+}
 
-    h1 {
-      font-size: 26px;
-      margin-bottom: 16px;
-    }
+.container{
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
 
-    h2 {
-      font-size: 18px;
-      margin-top: 28px;
-      margin-bottom: 8px;
-      color: #0a8f4e;
-    }
+h2{
+    color:#1a7c45;
+    margin-top:30px;
+}
 
-    p, li {
-      font-size: 14.5px;
-      line-height: 1.6;
-      color: #374151;
-    }
+p{
+    line-height:1.6;
+    margin-top:10px;
+}
 
-    ul {
-      padding-left: 18px;
-    }
+ul{
+    margin-top:10px;
+    padding-left:20px;
+}
 
-    .footer {
-      margin-top: 32px;
-      font-size: 12px;
-      color: #6b7280;
-    }
-  </style>
+.consent-box{
+    margin-top:40px;
+    padding:20px;
+    background:#f1f1f1;
+    border-radius:10px;
+}
+
+.buttons{
+    margin-top:30px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+button{
+    padding:15px 30px;
+    border:none;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.btn-voltar{
+    background:#ccc;
+}
+
+.btn-consentir{
+    background:#2ecc71;
+    color:white;
+}
+
+.btn-consentir:disabled{
+    background:#9fd8b8;
+    cursor:not-allowed;
+}
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    font-size:14px;
+    color:#666;
+}
+
+</style>
+
+<script>
+function toggleButton(){
+    const checkbox = document.getElementById("lgpdCheck");
+    const button = document.getElementById("consentButton");
+    button.disabled = !checkbox.checked;
+}
+
+function consentir(){
+    localStorage.setItem("lgpdConsent", "true");
+    window.location.href = "prear.html";
+}
+</script>
+
 </head>
-
 <body>
-  <div class="container">
-    <h1>Política de Privacidade</h1>
 
-    <p>
-      A <strong>PAVI Serviços Ambientais</strong> respeita a sua privacidade e
-      está comprometida com a proteção dos dados pessoais coletados por meio
-      deste aplicativo, em conformidade com a
-      <strong>Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018)</strong>
-      e demais legislações aplicáveis.
-    </p>
+<header>
+Política de Privacidade e Proteção de Dados<br>
+Programa Educação Ambiental – Araucária
+</header>
 
-    <h2>1. Coleta de Dados</h2>
-    <p>
-      Este aplicativo pode coletar dados pessoais fornecidos diretamente pelo
-      usuário, bem como dados necessários para o correto funcionamento das
-      funcionalidades oferecidas, incluindo, mas não se limitando a:
-    </p>
-    <ul>
-      <li>Nome, identificação funcional ou informações de contato;</li>
-      <li>Dados operacionais inseridos pelo usuário;</li>
-      <li>Informações técnicas do dispositivo, quando necessárias.</li>
-    </ul>
+<div class="container">
 
-    <h2>2. Uso das Informações</h2>
-    <p>
-      Os dados coletados são utilizados exclusivamente para:
-    </p>
-    <ul>
-      <li>Permitir o funcionamento adequado do aplicativo;</li>
-      <li>Melhorar a experiência do usuário;</li>
-      <li>Cumprir obrigações legais, regulatórias ou contratuais;</li>
-      <li>Garantir segurança, integridade e prevenção a fraudes.</li>
-    </ul>
+<h2>1. Controlador dos Dados</h2>
+<p>
+Os dados pessoais coletados nesta plataforma são tratados pelo Programa Educação Ambiental – Araucária,
+do Município de Araucária – PR.
+</p>
 
-    <h2>3. Compartilhamento de Dados</h2>
-    <p>
-      A PAVI Serviços Ambientais não comercializa dados pessoais.
-      Os dados poderão ser compartilhados apenas quando:
-    </p>
-    <ul>
-      <li>Houver exigência legal ou ordem judicial;</li>
-      <li>For necessário para a execução de serviços vinculados ao aplicativo;</li>
-      <li>For indispensável para a proteção de direitos da empresa ou dos usuários.</li>
-    </ul>
+<h2>2. Dados Coletados</h2>
+<ul>
+<li>Nome completo</li>
+<li>Endereço</li>
+<li>Telefone</li>
+<li>E-mail</li>
+<li>Bairro</li>
+<li>Informações de participação em ações ambientais</li>
+<li>Dados de navegação (IP, cookies, métricas de acesso)</li>
+</ul>
 
-    <h2>4. Armazenamento e Segurança</h2>
-    <p>
-      Os dados pessoais são armazenados em ambientes seguros e controlados,
-      adotando-se medidas técnicas e administrativas razoáveis para proteger
-      as informações contra acessos não autorizados, perdas, alterações ou
-      divulgações indevidas.
-    </p>
+<h2>3. Finalidade do Tratamento</h2>
+<p>Os dados são utilizados para:</p>
+<ul>
+<li>Cadastro no programa</li>
+<li>Identificação do participante</li>
+<li>Cálculo de pontuação e ranking</li>
+<li>Comunicação sobre campanhas e eventos</li>
+<li>Geração de relatórios estatísticos</li>
+<li>Cumprimento de obrigações legais</li>
+</ul>
 
-    <h2>5. Direitos do Titular</h2>
-    <p>
-      Nos termos da LGPD, o titular dos dados pode, a qualquer momento,
-      solicitar:
-    </p>
-    <ul>
-      <li>Confirmação da existência de tratamento de dados;</li>
-      <li>Acesso, correção ou atualização de seus dados;</li>
-      <li>Anonimização, bloqueio ou eliminação de dados desnecessários;</li>
-      <li>Informações sobre o uso e compartilhamento de dados.</li>
-    </ul>
+<h2>4. Base Legal (Lei nº 13.709/2018 - LGPD)</h2>
+<ul>
+<li>Consentimento do titular (Art. 7º, I)</li>
+<li>Execução de políticas públicas (Art. 7º, III)</li>
+<li>Legítimo interesse (Art. 7º, IX)</li>
+</ul>
 
-    <h2>6. Retenção dos Dados</h2>
-    <p>
-      Os dados pessoais serão mantidos apenas pelo tempo necessário para
-      cumprir as finalidades para as quais foram coletados ou conforme
-      exigido por lei.
-    </p>
+<h2>5. Compartilhamento</h2>
+<p>
+Os dados poderão ser compartilhados com a Prefeitura Municipal de Araucária,
+prestadores de serviços tecnológicos e mediante obrigação legal.
+Não comercializamos dados pessoais.
+</p>
 
-    <h2>7. Alterações nesta Política</h2>
-    <p>
-      Esta Política de Privacidade pode ser atualizada a qualquer momento,
-      visando manter conformidade legal ou melhorias operacionais.
-      Recomenda-se a revisão periódica deste documento.
-    </p>
+<h2>6. Segurança</h2>
+<p>
+Adotamos medidas técnicas e administrativas para proteger os dados pessoais contra acesso não autorizado,
+uso indevido, perda ou divulgação.
+</p>
 
-    <h2>8. Contato</h2>
-    <p>
-      Em caso de dúvidas, solicitações ou questões relacionadas a esta Política
-      de Privacidade, entre em contato com a PAVI Serviços Ambientais por meio
-      dos canais oficiais da empresa.
-    </p>
+<h2>7. Direitos do Titular</h2>
+<p>Nos termos do Art. 18 da LGPD, o usuário pode solicitar:</p>
+<ul>
+<li>Confirmação de tratamento</li>
+<li>Acesso aos dados</li>
+<li>Correção</li>
+<li>Exclusão</li>
+<li>Revogação do consentimento</li>
+</ul>
 
-    <div class="footer">
-      Última atualização: fevereiro de 2026
-    </div>
-  </div>
+<h2>8. Retenção dos Dados</h2>
+<p>
+Os dados serão armazenados enquanto o participante estiver ativo no programa
+ou pelo tempo necessário para cumprimento de obrigações legais.
+</p>
+
+<div class="consent-box">
+<label>
+<input type="checkbox" id="lgpdCheck" onclick="toggleButton()">
+Declaro que li e concordo com a Política de Privacidade e autorizo o tratamento dos meus dados conforme a LGPD.
+</label>
+
+<div class="buttons">
+<button class="btn-voltar" onclick="window.location.href='prear.html'">
+Voltar
+</button>
+
+<button id="consentButton" class="btn-consentir" disabled onclick="consentir()">
+Consentir e Prosseguir
+</button>
+</div>
+
+</div>
+
+<footer>
+Lei Geral de Proteção de Dados – Lei nº 13.709/2018<br>
+Programa Educação Ambiental – Araucária
+</footer>
+
+</div>
+
 </body>
 </html>
